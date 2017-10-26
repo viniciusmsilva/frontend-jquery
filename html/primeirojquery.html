@@ -2,9 +2,43 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Uso de JQuery</title>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+
+<script type="text/javascript">
+	/*Para usar a biblioteca de JQuery, é necessário usar um caracter especial para fazer a chamada:($) ou JQuery*/
+
+	$(document).ready(function(){
+		$('#principal').append('<p>Texto Novo</p>');
+		$('#primeiro').click(function(){
+			$('div').append('<h2>Estou aqui!</h2>');
+		});
+	});
+</script>
+
 </head>
 <body>
+
+<header>
+	<h1> Página com JQeury</h1>
+</header>
+
+<main>
+	<section id="principal">
+		<div>
+			<button id="primeiro">Primeiro</button><br>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem eum repellat aliquid possimus velit delectus, ducimus doloribus laboriosam hic necessitatibus tempore tempora rem, optio quibusdam voluptatem quia corporis voluptas reiciendis!</div>
+			<div>Veritatis magni a expedita, distinctio reiciendis deserunt animi temporibus exercitationem architecto cumque ratione, assumenda eaque. Dolorum quis ab consequatur labore doloremque, culpa voluptas accusantium ut quas quibusdam dolore similique aspernatur!</div>
+			<div>Natus at dolor, enim nemo beatae maiores, nesciunt adipisci facilis, voluptas velit delectus aspernatur impedit porro. Rem cum nisi velit fuga ex rerum aliquam quae repellendus aperiam assumenda. Ea, perspiciatis!</div>
+		</div>
+		<div>
+			<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam dolores, itaque quaerat velit earum ipsam saepe, nesciunt, suscipit excepturi natus consequuntur quam. Labore fugiat esse debitis sequi sit sed nisi.</div>
+			<div>Fugit reprehenderit consectetur est quia deserunt dolores aut provident, perspiciatis quas necessitatibus dolorem omnis, ipsa quaerat esse, assumenda ipsam iste? Magnam dolorum aperiam, quibusdam quas vero et maiores, id harum!</div>
+			<div>Eum iste ullam nobis minus molestiae culpa ea! Magnam expedita dolore, debitis officia impedit explicabo repellendus obcaecati, aliquam soluta vero quisquam dolor sapiente velit eaque, ut, consequuntur dolorum corporis ea!</div>
+		</div>
+	</section>
+</main>
 	
 </body>
 </html>
